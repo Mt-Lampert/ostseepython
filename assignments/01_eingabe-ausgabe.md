@@ -15,6 +15,13 @@ eine Eingabeaufforderung: _        # ein Kommentar
 
 Frag den Benutzer nach seinem Vornamen, und gib "Hallo {Vorname}" aus.
 
+Eingaben funktionieren wie folgt:
+
+```py
+print("Eine Zahl, bitte  ")
+myInput = input()   # enthält jetzt die eingabe, sobald der Benutzer ENTER drückt
+```
+
 ```bash
 $ python ein-und-ausgabe.py
 Dein Vorname, bitte: _         # z.B. "Otto"
