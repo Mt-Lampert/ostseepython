@@ -50,7 +50,9 @@ Bitte den Benutzer, zwei Zahlen einzugeben. Addiere sie und gib das Ergebnis aus
 Damit Python damit rechnen kann, müssen sie vorher in echte Zahlen umgewandelt
 werden! Das folgende Beispiel zeigt, wie es geht:
 
-`answer = int("42")`
+```py
+answer = int("42")
+```
 
 
 ```bash
@@ -146,11 +148,14 @@ Den Fahrenheit-Wert einer Celsius-Temperatur berechnet man wie folgt:
 
 <img src="https://render.githubusercontent.com/render/math?math=F = \frac{C*9}{5} %2B 32" width=200>
 
-Frage den Benutzer nach einer Celsius-Temperatur, berechne sie in Fahrenheit um und gib das Ergebnis aus:
+Frage den Benutzer nach einer Celsius-Temperatur, berechne sie in Fahrenheit um
+und gib das Ergebnis aus:
+
+**Hinweis:** Du solltest die Eingabe vor dem Berechnen in eine `float` umwandeln
 
 ```bash
 $ python ein-und-ausgabe.py
-Geben Sie bitte eine Celsius-Temperatur ein: _    # z.b. 100; bitte in float umwandeln!
+Geben Sie bitte eine Celsius-Temperatur ein: _    # z.b. 100
 => 100.0 Grad Celsius sind 212.0 Grad Fahrenheit
 ```
 
