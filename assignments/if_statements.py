@@ -50,6 +50,66 @@ def logicalOr(num):
 
     return ausgabe
 
+def grosseZuerst(num1, num2):
+    ausgabe = []
+    #
+    # Platz fuer deinen Code 
+    #
+    return ausgabe
+
+def kleinerAls20(num):
+    ausgabe = ""
+    #
+    # Platz fuer deinen Code 
+    #
+    return ausgabe
+
+def imGruenenBereich(num):
+    ausgabe = ""
+    #
+    # Platz fuer deinen Code 
+    #
+    return ausgabe
+
+def farbenwahl(eingabe):
+    ausgabe = ""
+    meineFarben = [ "blau", "rot", "gelb" ]
+    #
+    # Platz fuer deinen Code
+    #
+    return ausgabe
+
+
+def altersfreigabe(eingabe):
+    ausgabe = ""
+    #
+    # Platz fuer deinen Code
+    #
+    return ausgabe
+
+def auswahlmenu(eingabe):
+    ausgabe = ""
+    #
+    # Platz fuer deinen Code
+    #
+    return ausgabe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # vim: foldmethod=indent
 
 
