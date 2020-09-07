@@ -1,4 +1,3 @@
-
 from if_statements import *
 
 def test_CheckPytest():
@@ -39,11 +38,11 @@ def test_kleinerAls20():
     assert kleinerAls20(-142) == "Jawohl!"
 
 def test_imGruenenBereich():
-    assert imGrünenBereich(11) == "11 ist im grünen Bereich."
-    assert imGrünenBereich(20) == "20 ist nicht im grünen Bereich."
-    assert imGrünenBereich(0) == "0 ist nicht im grünen Bereich."
-    assert imGrünenBereich(17) == "17 ist im grünen Bereich."
-    assert imGrünenBereich(-44) == "-44 ist nicht im grünen Bereich."
+    assert imGruenenBereich(11) == "11 ist im grünen Bereich."
+    assert imGruenenBereich(20) == "20 ist nicht im grünen Bereich."
+    assert imGruenenBereich(0) == "0 ist nicht im grünen Bereich."
+    assert imGruenenBereich(17) == "17 ist im grünen Bereich."
+    assert imGruenenBereich(-44) == "-44 ist nicht im grünen Bereich."
 
 def test_farbenwahl():
     assert farbenwahl("gelb") == "Ich mag gelb auch."

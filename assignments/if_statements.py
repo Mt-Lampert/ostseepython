@@ -52,31 +52,35 @@ def logicalOr(num):
 
 def grosseZuerst(num1, num2):
     ausgabe = []
-    #
-    # Platz fuer deinen Code 
-    #
+    if num1 > num2:
+        ausgabe = [num1, num2]
+    else:
+        ausgabe = [num2, num1]
     return ausgabe
 
 def kleinerAls20(num):
     ausgabe = ""
-    #
-    # Platz fuer deinen Code 
-    #
+    if num < 20:
+        ausgabe = "Jawohl!"
+    else:
+        ausgabe = "Was soll das?"
     return ausgabe
 
 def imGruenenBereich(num):
     ausgabe = ""
-    #
-    # Platz fuer deinen Code 
-    #
+    if num >= 10 and num < 20:
+        ausgabe = f'{num} ist im grünen Bereich.'
+    else:
+        ausgabe = f'{num} ist nicht im grünen Bereich.'
     return ausgabe
 
 def farbenwahl(eingabe):
     ausgabe = ""
     meineFarben = [ "blau", "rot", "gelb" ]
-    #
-    # Platz fuer deinen Code
-    #
+    if eingabe in meineFarben:
+        ausgabe = f'Ich mag {eingabe} auch.'
+    else:
+        ausgabe = f'Ich mag {eingabe} nicht.'
     return ausgabe
 
 
