@@ -35,3 +35,45 @@ def test_mittlereDrei():
             "Die Eingabe muss mindestens drei Buchstaben lang sein!"
     assert mittlereDrei("Magnesium") == "nes"
 
+def test_inDieMitte():
+    assert inDieMitte("Weinbrand", "rose") == "Wein-rose-rand"
+    assert inDieMitte("gagadodo", "in") == "gaga-in-dodo"
+    assert inDieMitte("guggenheim", "bap") == "gugge-bap-nheim"
+    assert inDieMitte("information", "stat") == "infor-stat-ation"
+
+
+def test_zeichenstatistik():
+    assert zeichenstatistik("P@#yn26at^&i5ve") == "groß: 1, klein: 7, zahl: 3, symbol: 4"
+    assert zeichenstatistik("'oMo,h=eVEG/j}`N'") == \
+                "groß: 5, klein: 5, zahl: 0, symbol: 7"
+    assert zeichenstatistik("g_tP1N^A5J]B=r") == \
+                "groß: 5, klein: 3, zahl: 2, symbol: 4"
+
+
+def test_istEnthalten():
+    assert istEnthalten("Donauland", "laaD")
+    assert istEnthalten("schweineschnitzel", "sstzw")
+    assert not istEnthalten("schweineschnitzel", "sstzg")
+
+
+def test_zeichenhaeufigkeit():
+    assert zeichenhaeufigkeit("enterprise") == \
+            {'e': 3, 'n': 1, 't': 1, 'r': 2, 'p': 1, 'i': 1, 's': 1}
+    assert zeichenhaeufigkeit("mehlmütze") == \
+            {'m': 2, 'e': 2, 'h': 1, 'l': 1, 'ü': 1, 't': 1, 'z': 1}
+
+
+def test_stringfilter():
+    assert stringfilter(["Eddy", "Meyer", "", "Mueller", True, "Lehmann", ""]) == \
+            ["Eddy", "Meyer", "Mueller", "Lehmann"]
+
+
+def test_filtereZiffern():
+    assert filtereZiffern("ich bin 50 jahre und habe 3 Hunde und vier Katzen") == \
+            "503"
+    assert filtereZiffern("qi4swe420 @0$23;;rac.s") == \
+            "4420023"
+
+
+
+# vim: foldmethod=indent
