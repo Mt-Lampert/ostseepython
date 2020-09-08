@@ -17,9 +17,12 @@ def test_generiereCSV():
 
 
 def test_kennzeichneWort():
-    assert kennzeichneWort("Der Mut, nicht aufzugeben", "Mut") == \
-            "Der MUT, nicht aufzugeben"
+    assert kennzeichneWort("mach mir Mut", "mir") == 'mach MIR Mut'
+    assert kennzeichneWort("mach Mir Mut", "mir") == 'mach MIR Mut'
+    assert kennzeichneWort("mach mir Mut", "blupp") == 'mach mir Mut'
     assert kennzeichneWort("Die Sieben Säulen der Weisheit", "Sieben") == \
+            "Die SIEBEN Säulen der Weisheit"
+    assert kennzeichneWort("Die Sieben Säulen der Weisheit", "sieben") == \
             "Die SIEBEN Säulen der Weisheit"
     assert kennzeichneWort("Ein göttliches Mondgesicht", "Mond") == \
             "Ein göttliches MONDgesicht"
@@ -40,6 +43,8 @@ def test_inDieMitte():
     assert inDieMitte("gagadodo", "in") == "gaga-in-dodo"
     assert inDieMitte("guggenheim", "bap") == "gugge-bap-nheim"
     assert inDieMitte("information", "stat") == "infor-stat-ation"
+    assert inDieMitte("eisenhart", "in")  == 'eise-in-hart'
+    assert inDieMitte("Eisenbeisser", "in")  == 'Eisenb-in-eisser'
 
 
 def test_zeichenstatistik():
@@ -57,6 +62,8 @@ def test_istEnthalten():
 
 
 def test_zeichenhaeufigkeit():
+    assert zeichenhaeufigkeit("MehlMütze") == \
+            {'m': 2, 'e': 2, 'h': 1, 'l': 1, 'ü': 1, 't': 1, 'z': 1}
     assert zeichenhaeufigkeit("enterprise") == \
             {'e': 3, 'n': 1, 't': 1, 'r': 2, 'p': 1, 'i': 1, 's': 1}
     assert zeichenhaeufigkeit("mehlmütze") == \
@@ -66,6 +73,8 @@ def test_zeichenhaeufigkeit():
 def test_stringfilter():
     assert stringfilter(["Eddy", "Meyer", "", "Mueller", True, "Lehmann", ""]) == \
             ["Eddy", "Meyer", "Mueller", "Lehmann"]
+    assert stringfilter(['a', 'b', None, 8, 'ccc', '', 'dodo' ]) == \
+            ['a', 'b', 'ccc', 'dodo']
 
 
 def test_filtereZiffern():
@@ -73,7 +82,7 @@ def test_filtereZiffern():
             "503"
     assert filtereZiffern("qi4swe420 @0$23;;rac.s") == \
             "4420023"
-
+    assert filtereZiffern("ich bin fünfzig und habe drei probleme") == ""
 
 
 # vim: foldmethod=indent

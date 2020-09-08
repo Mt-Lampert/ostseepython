@@ -77,8 +77,11 @@ def istEnthalten(eingabe1, eingabe2):
 
 def zeichenhaeufigkeit(eingabe):
     ausgabe = dict()
-    for c in eingabe:
-        ausgabe[c] = eingabe.count(c)
+
+    lowerEingabe = eingabe.lower()
+
+    for c in lowerEingabe:
+        ausgabe[c] = lowerEingabe.count(c)
 
     return ausgabe
 
