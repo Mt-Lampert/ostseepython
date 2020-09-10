@@ -34,6 +34,8 @@ def test_cartesius():
 def test_aufUndAb():
     assert aufUndAb(['a', 'b', 'c'], ['1', '2', '3']) == \
             ['a', '3', 'b', '2', 'c', '1']
+    assert aufUndAb(['a', 'b', 'c', 'd' ], ['1', '2', '3', '4']) == \
+            ['a', '4', 'b', '3', 'c', '2', 'd', '1']
 
 
 
