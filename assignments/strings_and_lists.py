@@ -1,64 +1,52 @@
 
 def laengeDerElemente(dieListe):
     ausgabe = []
-    for el in dieListe:
-        ausgabe.append(len(el))
+    #
+    # platz fuer euren Code
+    #
     return ausgabe
 
 def filtereElementeMitG(dieListe):
     ausgabe = []
-    for el in dieListe:
-        if 'g' in el or 'G' in el:
-            ausgabe.append(el)
+    #
+    # platz fuer euren Code
+    #
     return ausgabe
 
 def generiereCSV(dieListe):
     ausgabe = ""
-    ausgabe = ", ".join(dieListe)
+    #
+    # platz fuer euren Code
+    #
     return ausgabe
 
 def kennzeichneWort(string, word):
     # neue Aufgabe
     ausgabe = ""
-    bigWord = word.capitalize()
-    ausgabe = string.replace(word, word.upper()).replace(bigWord, word.upper())
+    #
+    # platz fuer euren Code
+    #
     return ausgabe
 
 def mittlereDrei(string):
     ausgabe = ""
-    if len(string) % 2 == 0:
-        return "Die Anzahl der Buchstaben muss ungerade sein!"
-    elif len(string) < 3:
-        return "Die Eingabe muss mindestens drei Buchstaben lang sein!"
-
-    mittelIndex = int(len(string)/2) 
-    off = mittelIndex - 1
-    end = mittelIndex + 2
-
-    ausgabe = string[off:end] 
-
+    #
+    # platz fuer euren Code
+    #
     return ausgabe
 
 def inDieMitte(eingabe1, eingabe2):
     halb = int(len(eingabe1) / 2)
-    links = eingabe1[0:halb]
-    rechts = eingabe1[-halb:]
+    #
+    # platz fuer euren Code
+    #
     return f'{links}-{eingabe2}-{rechts}'
 
 def zeichenstatistik(eingabe):
     ausgabe = ""
-    gross = klein = zahl = symbol = 0
-
-    for c in eingabe:
-        if c.islower():
-            klein += 1
-        elif c.isupper():
-            gross += 1
-        elif c.isnumeric():
-            zahl += 1
-        else:
-            symbol += 1
-
+    #
+    # platz fuer euren Code
+    #
     ausgabe = f'groß: {gross}, klein: {klein}, zahl: {zahl}, symbol: {symbol}'
 
     return ausgabe
@@ -66,42 +54,32 @@ def zeichenstatistik(eingabe):
 def istEnthalten(eingabe1, eingabe2):
     """ ALLE Buchstaben in eingabe2 muessen in eingabe1 enthalten sein! """
     ausgabe = True
-
-    for c in eingabe2:
-        if c not in eingabe1:
-            ausgabe = False
-            break
-
+    #
+    # platz fuer euren Code
+    #
     return ausgabe
 
 
 def zeichenhaeufigkeit(eingabe):
     ausgabe = dict()
-
-    lowerEingabe = eingabe.lower()
-
-    for c in lowerEingabe:
-        ausgabe[c] = lowerEingabe.count(c)
-
+    #
+    # platz fuer euren Code
+    #
     return ausgabe
 
 def stringfilter(eingabe):
     ausgabe = []
-
-    for el in eingabe:
-        if isinstance(el, str) and len(el) > 0:
-            ausgabe.append(el)
-
+    #
+    # platz fuer euren Code
+    #
     return ausgabe
 
     
 def filtereZiffern(eingabe):
     ausgabe = ""
-
-    for c in eingabe:
-        if c.isnumeric():
-            ausgabe += c
-
+    #
+    # platz fuer euren Code
+    #
     return ausgabe
 
 
