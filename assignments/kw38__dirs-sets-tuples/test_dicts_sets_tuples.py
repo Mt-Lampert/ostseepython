@@ -11,7 +11,7 @@ NUMSET_BIGGER =  {30, 40, 50, 60, 70}
 def test_ganzWeitHinten():
     assert ganzWeitHinten() == 9
 
-def test_schluesselUndWert():
+def test_schluesselUndWerte():
     assert schluesselUndWerte(
             ['zehn', 'zwanzig', 'dreissig'],
             [ 10, 20, 30 ])  == \
