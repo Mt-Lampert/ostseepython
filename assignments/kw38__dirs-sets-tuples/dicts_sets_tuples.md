@@ -3,11 +3,21 @@
 
 ## Vorübungen
 
+
+
+1. Öffne die IDLE
+0. Führe jede Zeile auf, die 
+
+
+
 ```py
 #
 # person.keys() and person.values() geben einen "iterable generator" zurück, 
 # eine Art "Roh-Liste", die erst mit list(), set() oder tuple() in einen
 # echten Listentyp umgewandelt werden muss. 
+# 
+# Das ist eine Art Service von Python, damit man selber entscheiden kann,
+# in welcher Form man die Keys und die Values haben will.
 # 
 >>> person = { 'name': 'Sparrow', 'vorname': 'Jack', 'beruf': 'Piratenkapitän' }
 >>> list(person.keys())
@@ -121,8 +131,6 @@ standardwerte(["Arthur", "Trillian", "Zaphod"])
 #        { 'name': "Trillian", 'alter': 0, 'position': "" },
 #        { 'name': "Zaphod", 'alter': 0, 'position': "" }
 #    ]
-# 
-#     
 ```
 
 #### Testaufruf:
