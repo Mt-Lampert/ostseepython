@@ -6,7 +6,7 @@
 
 
 1. Öffne die IDLE
-0. Führe jede Zeile auf, die 
+0. Führe jede Zeile aus, die mit `>>>` eingeleitet wird, damit du siehst, was sie tut.
 
 
 
@@ -28,10 +28,10 @@
 >>> tuple(person.values())
 ```
 
-**Achtung:** Ab hier gehe ich davon aus, dass ihr selbstständig arbeiten, selbstständig
-denken, selbstständig recherchieren und selbstständig herumprobieren könnt
-(IDLE sei Dank!).  Deshalb gebe ich euch jetzt die Links zur offiziellen
-Python-Dokumentation für Dictionaries, Sets und Tupel.
+**Achtung:** Ab hier gehe ich davon aus, dass ihr selbstständig arbeiten,
+selbstständig denken, selbstständig recherchieren und selbstständig
+herumprobieren könnt (IDLE sei Dank!).  Deshalb gebe ich euch jetzt die Links
+zur offiziellen Python-Dokumentation für Dictionaries, Sets und Tupel.
 
 1. [Dictionaries](https://docs.python.org/3.8/library/stdtypes.html#mapping-types-dict).
    Beachte besonders: `del`, `len`, `key in dict`, `.keys()`, `.update()` und `.values()` 
@@ -51,7 +51,7 @@ passiert dann und wann. Oder nach guten Erklärungen an anderer Stelle googeln.
 
 
 
-## 00 Ganz weit hinten
+## 01 Ganz weit hinten
 
 Schreibe Code in `ganzWeitHinten()`, der zurückgibt, wie viele Punkte Micha im
 Fach Physik erreicht hat. In der Funktion steht Code, der das vorbereitet.
@@ -115,7 +115,7 @@ vereinigungsDict(
 $ pytest test_dicts_sets_tuples.py::test_vereinigungsDict
 ```
 
-## 00 Standardwerte
+## 03 Standardwerte
 
 Schreibe code für `standardwerte()`, der jedem Element in `eingabe1` den
 vorgegebenen Wert in `standard` zuweist (definiert in der Funktion!) und die
@@ -143,7 +143,7 @@ $ pytest test_dicts_sets_tuples.py::test_standardwerte
 
 
 
-## 00 Einfache Schnittmenge
+## 04 Einfache Schnittmenge
 
 Schreibe Code für `einfacheSchnittmenge()`, der aus den Elementen von `set1` und
 `set2` diejenigen in einem neuen Set zurückgibt, die in beiden enthalten sind.
@@ -161,7 +161,7 @@ $ pytest test_dicts_sets_tuples.py::test_einfacheSchnittmenge
 ```
 
 
-## 00 Neue Werte für das Set
+## 05 Neue Werte für das Set
 
 Schreibe Code für `neueSetWerte()`, die das Set in `theSet` um die Elemente in
 `eingabe` erweitert. Hinweis: Wenn du deine Hausaufgaben gut gemacht hast,
@@ -182,7 +182,7 @@ $ pytest test_dicts_sets_tuples.py::test_neueSetWerte
 ```
 
 
-## 00 Wertevereinigung
+## 06 Wertevereinigung
 
 Schreibe Code für `wertevereinigung()`, der die werte aus `set1` und `liste1`
 zu einem neuen Set zusammenfasst und dabei Dubletten vermeidet. Hinweis: Wenn
@@ -203,7 +203,7 @@ $ pytest test_dicts_sets_tuples.py::test_wertevereinigung
 ```
 
 
-## 00 Haben sie Gemeinsamkeiten?
+## 07 Haben sie Gemeinsamkeiten?
 
 Schreibe Code für `habenGemeinsamkeiten()`, der überprüft, ob `liste1` und
 `liste2` gemeinsame Elemente haben oder nicht.
